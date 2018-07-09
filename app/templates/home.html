@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Judge</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<p>
+    Please input your comment.
+</p>
+<form action="/" method="post">
+    {% csrf_token %}
+    <textarea style="height: 380px; width: 460px" name="text"></textarea>
+    <br>
+    <input type="submit" value="submit">
+</form>
+<br>
+{{ result }}
+</body>
+</html>
